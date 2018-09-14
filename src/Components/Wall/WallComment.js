@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import Comentario from './PrintComment';
+import ReactDOM from 'react-dom';
+import Button from '@material-ui/core/Button';
 
 class WallComments extends Component {
 
@@ -16,7 +19,11 @@ class WallComments extends Component {
         <div>
           <form onSubmit={this.addComment}>
             <input placeholder="comment..." ref={(input) => this.textInput = input}/>
-            <button type="submit">Add comment</button>
+
+               <Button variant="contained" color="primary" type="submit">
+addComment
+    </Button>
+           
           </form>
         </div>
       </div>
@@ -37,12 +44,31 @@ class WallComments extends Component {
     this.setState((previousState) => {
       return {
         items: previousState.items.concat(newItem),
+        
       }
     })
+
+    
     // Referencia al input
     this.textInput.value = '';
-    console.log(this.state.items)
+    console.log(this.state.items); // pasar a map?
+    
+
   }
+
+  // render(){
+  //   return(
+  //     <div className="Container">
+  //       {this.state.items.bind(this).map((comment) => (
+  //         <Comentario texto={comment.text}/>
+  //       ))}
+  //     </div>
+  //   )
+  // }
+
+
+
+ 
 
 
 };
