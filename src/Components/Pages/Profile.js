@@ -1,9 +1,9 @@
 import React from 'react';
-import Logo from './../Common/Logo';
-
+import Logo4u from './../Logo/Logo'
+ 
 const Profile = () => (
   <div>
-    <Logo photo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png"/>
+    <Logo4u />
     <h2>Perfil</h2>
   </div>
 );

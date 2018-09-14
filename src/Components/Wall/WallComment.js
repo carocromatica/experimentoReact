@@ -21,8 +21,8 @@ class WallComments extends Component {
             <input placeholder="comment..." ref={(input) => this.textInput = input}/>
 
                <Button variant="contained" color="primary" type="submit">
-addComment
-    </Button>
+                      addComment
+                          </Button>
            
           </form>
         </div>

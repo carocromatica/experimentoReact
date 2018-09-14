@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import UserForm from '../Login/Userform'
+//  import UserForm from '../Login/Userform'
 import PrintList from '../Login/PrintList'
 
 class Login extends Component {
@@ -7,7 +7,7 @@ class Login extends Component {
     return (
       <div className="App">
        
-        <UserForm />
+       
         <PrintList />
       </div>
 
